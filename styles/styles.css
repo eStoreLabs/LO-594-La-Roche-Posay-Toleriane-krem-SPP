@@ -400,6 +400,7 @@ body {
     margin-bottom: -8px;
     margin-left: 10px;
     margin-right: 10px;
+    width: 100px;
 }
 
 #es-rc #es-rc-content .es-research--right--text-percent.small-margin {
@@ -437,6 +438,7 @@ body {
         margin-bottom: -8px;
         margin-left: 10px;
         margin-right: 10px;
+        width: auto;
     }
 
 }

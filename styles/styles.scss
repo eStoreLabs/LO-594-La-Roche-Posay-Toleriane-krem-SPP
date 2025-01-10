@@ -3,7 +3,6 @@ $color_2: #009FE3;
 $color_3: #000;
 $color_4: #7399C6;
 $font-family_1: "Montserrat", sans-serif;
-$background-color_1: #7399C6;
 $background-color_5: #F2F2F2;
 $background-color_6: #f4f4f4;
 
@@ -248,6 +247,7 @@ body {
 			margin-bottom: -8px;
 			margin-left: 10px;
 			margin-right: 10px;
+			width: 100px;
 		}
 		.es-research--right--text-percent.small-margin {
 			margin-right: 10px;
@@ -828,6 +828,7 @@ body {
 				margin-bottom: -8px;
 				margin-left: 10px;
 				margin-right: 10px;
+				width: auto;
 			}
 		}
 	}
