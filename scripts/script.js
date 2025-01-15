@@ -1,4 +1,4 @@
-const accTab = document.querySelectorAll('.acc-tab');
+const accTab = document.querySelectorAll('#es-rc #es-rc-content .acc-tab');
 
 for (let i = 0; i < accTab.length; i++) {
   accTab[i].addEventListener('click', function () {
@@ -23,42 +23,31 @@ for (let i = 0; i < accTab.length; i++) {
   });
 }
 
-const swiper = new Swiper('.swiper--1', {
+const swiper = new Swiper('.es-swiper1', {
   direction: 'horizontal',
   loop: true,
 
   pagination: {
-    el: '.swiper-pagination--1',
+    el: '.es-swiper1-pagination',
   },
 
   navigation: {
-    nextEl: '.swiper-button-next--1',
-    prevEl: '.swiper-button-prev--1',
+    nextEl: '.es-swiper1-button-next',
+    prevEl: '.es-swiper1-button-prev',
   },
 
 });
 
-const swiper2 = new Swiper('.swiper--2', {
-  direction: 'horizontal',
-  loop: true,
-
-  navigation: {
-    nextEl: '.swiper-button-next--2',
-  },
-
-});
-
-const swiper3 = new Swiper('.swiper--3', {
+const swiper2 = new Swiper('.es-swiper2', {
   direction: 'horizontal',
   loop: true,
 
   pagination: {
-    el: '.swiper-pagination--3',
+    el: '.es-swiper2-pagination',
   },
 
   navigation: {
-    nextEl: '.swiper-button-next--3',
-    prevEl: '.swiper-button-prev--3',
+    nextEl: '.es-swiper2-button-next',
+    prevEl: '.es-swiper2-button-prev',
   },
-
 });

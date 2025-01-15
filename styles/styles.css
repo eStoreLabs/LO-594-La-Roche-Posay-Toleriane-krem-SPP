@@ -146,6 +146,9 @@ body {
         width: 50%;
         margin-top: 0;
     }
+    #es-rc #es-rc-content .es-kv__right br{
+        display: none;
+    }
 
     #es-rc #es-rc-content .es-kv__text--left {
         position: absolute;
@@ -184,7 +187,8 @@ body {
 #es-rc #es-rc-content .es-benefits__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    max-width: 290px;
+    margin: 30px auto 0 auto;
 }
 
 #es-rc #es-rc-content .es-benefits__single {
@@ -223,7 +227,8 @@ body {
     }
 
     #es-rc #es-rc-content .es-benefits__list {
-        margin-top: 50px;
+        max-width: unset;
+        margin: 50px auto 0 auto;
     }
 
 }
@@ -553,44 +558,44 @@ body {
     margin-bottom: 20px;
 }
 
-#es-rc #es-rc-content .swiper--1 {
+#es-rc #es-rc-content .es-swiper1 {
     width: 210px;
     height: 450px;
 }
 
-#es-rc #es-rc-content .swiper--1 .es-cross__single {
+#es-rc #es-rc-content .es-swiper1 .es-cross__single {
     width: 210px;
 }
 
-#es-rc #es-rc-content .swiper--1 .es-cross__single--text--wrapper {
+#es-rc #es-rc-content .es-swiper1 .es-cross__single--text--wrapper {
     align-items: center;
 }
 
-#es-rc #es-rc-content .swiper--1 .swiper-pagination-bullet {
+#es-rc #es-rc-content .es-swiper1 .swiper-pagination-bullet {
     opacity: 0.1;
 }
 
-#es-rc #es-rc-content .swiper--1 .swiper-pagination-bullet-active {
+#es-rc #es-rc-content .es-swiper1 .swiper-pagination-bullet-active {
     background: #7399C6;
     opacity: 1;
 }
 
-#es-rc #es-rc-content .swiper-button-prev.swiper-button-prev--1,
-#es-rc #es-rc-content .swiper-button-next.swiper-button-next--1 {
+#es-rc #es-rc-content .swiper-button-prev.es-swiper1-button-prev,
+#es-rc #es-rc-content .swiper-button-next.es-swiper1-button-next {
     top: unset;
     bottom: -6px;
 }
 
-#es-rc #es-rc-content .swiper-button-prev.swiper-button-prev--1 {
+#es-rc #es-rc-content .swiper-button-prev.es-swiper1-button-prev {
     left: 32px;
 }
 
-#es-rc #es-rc-content .swiper-button-next.swiper-button-next--1 {
+#es-rc #es-rc-content .swiper-button-next.es-swiper1-button-next {
     right: 36px;
 }
 
-#es-rc #es-rc-content .swiper-button-prev.swiper-button-prev--1::after,
-#es-rc #es-rc-content .swiper-button-next.swiper-button-next--1::after {
+#es-rc #es-rc-content .swiper-button-prev.es-swiper1-button-prev::after,
+#es-rc #es-rc-content .swiper-button-next.es-swiper1-button-next::after {
     font-size: 22px;
     font-weight: 900;
     color: #7399C6;
@@ -660,31 +665,6 @@ body {
     width: 350px;
     right: -35%;
 }
-#es-rc #es-rc-content .es-products-mobile {
-    margin-bottom: 30px;
-}
-
-#es-rc #es-rc-content .swiper--2 {
-    width: 317px;
-    height: 420px;
-}
-
-#es-rc #es-rc-content .es-products-mobile .es-products__single {
-    height: 420px;
-}
-#es-rc #es-rc-content .es-products-mobile .es-products__single img {
-    margin-bottom: 10px;
-}
-
-#es-rc #es-rc-content .swiper-button-next.swiper-button-next--2 {
-    top: 10%;
-}
-
-#es-rc #es-rc-content .swiper-button-next.swiper-button-next--2::after {
-    font-size: 22px;
-    font-weight: 900;
-    color: #fff;
-}
 
 @media (max-width: 320px) {
     #es-rc #es-rc-content .es-products__single {
@@ -753,11 +733,6 @@ body {
     font-weight: 700;
 }
 
-#es-rc #es-rc-content .swiper--3 {
-    width: 290px;
-    height: 640px;
-}
-
 #es-rc #es-rc-content .es-table-mobile .es-table__single {
     width: 100%;
     padding-bottom: 10px;
@@ -767,31 +742,62 @@ body {
     margin-bottom: 15px;
 }
 
-#es-rc #es-rc-content .swiper--3 .swiper-pagination-bullet {
+#es-rc #es-rc-content .es-products-mobile {
+    margin-bottom: 30px;
+}
+
+#es-rc #es-rc-content .es-swiper2 {
+    width: 317px;
+    padding-bottom: 15px;
+    height: fit-content;
+}
+
+#es-rc #es-rc-content .es-products-mobile .es-products__single {
+    height: 420px;
+}
+#es-rc #es-rc-content .es-products-mobile .es-products__single img {
+    margin-bottom: 10px;
+}
+
+#es-rc #es-rc-content .swiper-button-next#es-swiper2-button-next__top {
+    top: 4%;
+    right: 10px;
+}
+
+#es-rc #es-rc-content .swiper-button-next#es-swiper2-button-next__top::after {
+    font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+}
+#es-rc #es-rc-content .es-swiper2-pagination {
+    position: relative;
+    bottom: -6px;
+}
+#es-rc #es-rc-content .es-swiper2 .swiper-pagination-bullet {
     opacity: 0.1;
 }
 
-#es-rc #es-rc-content .swiper--3 .swiper-pagination-bullet-active {
+#es-rc #es-rc-content .es-swiper2 .swiper-pagination-bullet-active {
     background: #7399C6;
     opacity: 1;
 }
 
-#es-rc #es-rc-content .swiper-button-prev.swiper-button-prev--3,
-#es-rc #es-rc-content .swiper-button-next.swiper-button-next--3 {
+#es-rc #es-rc-content .swiper-button-prev.es-swiper2-button-prev,
+#es-rc #es-rc-content .swiper-button-next.es-swiper2-button-next {
     top: unset;
     bottom: -6px;
 }
 
-#es-rc #es-rc-content .swiper-button-prev.swiper-button-prev--3 {
+#es-rc #es-rc-content .swiper-button-prev.es-swiper2-button-prev {
     left: 82px;
 }
 
-#es-rc #es-rc-content .swiper-button-next.swiper-button-next--3 {
+#es-rc #es-rc-content .swiper-button-next.es-swiper2-button-next {
     right: 86px;
 }
 
-#es-rc #es-rc-content .swiper-button-prev.swiper-button-prev--3::after,
-#es-rc #es-rc-content .swiper-button-next.swiper-button-next--3::after {
+#es-rc #es-rc-content .swiper-button-prev.es-swiper2-button-prev::after,
+#es-rc #es-rc-content .swiper-button-next.es-swiper2-button-next::after {
     font-size: 22px;
     font-weight: 900;
     color: #7399C6;
