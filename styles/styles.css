@@ -93,18 +93,18 @@
   color: #fff;
   width: 65%;
 }
-#es-rc #es-rc-content .es-packshot {
+#es-rc #es-rc-content .es-kv__packshot {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   display: none;
 }
-#es-rc #es-rc-content .es-packshot img {
+#es-rc #es-rc-content .es-kv__packshot img {
   max-width: 9.5%;
   transition: all 0.3s ease-in-out;
 }
-#es-rc #es-rc-content .es-packshot img:hover {
+#es-rc #es-rc-content .es-kv__packshot img:hover {
   transform: scale(1.05);
 }
 @media (min-width: 608px) {
@@ -133,7 +133,7 @@
     font-size: 28px;
     width: 80%;
   }
-  #es-rc #es-rc-content .es-packshot {
+  #es-rc #es-rc-content .es-kv__packshot {
     display: block;
   }
 }
