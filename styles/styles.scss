@@ -830,60 +830,63 @@ $media-breakpoint-duo-md: 768px;
       }
     }
   }
-  .es-top__container {
-    display: flex;
-    margin-top: 45px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .es-top__single {
-      width: 100%;
-      margin: 10px 0;
-      &:nth-child(1) {
-        align-self: center;
-      }
-      &-img {
-        position: relative;
-      }
-      &-text {
-        position: absolute;
-        bottom: 5%;
-        left: 15px;
-        text-transform: uppercase;
-        color: #fff;
-        .es-bold {
-          font-weight: 700;
+  .es-top {
+    &__container {
+      display: flex;
+      margin-top: 45px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &__single {
+        width: 100%;
+        margin: 10px 0;
+        &:nth-child(1) {
+          align-self: center;
         }
-      }
-      @media (max-width: 350px) {
-        &-text {
-          font-size: 14px;
+        &-img {
+          position: relative;
         }
-      }
-      @media (min-width: 576px) {
-        width: 24.5%;
-        margin: unset;
-        font-size: 14px;
         &-text {
-          top: 60%;
-          left: 0;
-        }
-      }
-      @media (min-width: 700px) {
-        font-size: 14px;
-        left: 15px;
-        &-text {
-          top: 73%;
+          position: absolute;
+          bottom: 5%;
           left: 15px;
+          text-transform: uppercase;
+          color: $color-white;
+          .es-bold {
+            font-weight: $fw-bold;
+          }
+        }
+        @media (max-width: 350px) {
+          &-text {
+            font-size: 14px;
+          }
+        }
+        @media (min-width: 576px) {
+          width: 24.5%;
+          margin: unset;
+          font-size: 14px;
+          &-text {
+            top: 60%;
+            left: 0;
+          }
+        }
+        @media (min-width: 700px) {
+          font-size: 14px;
+          left: 15px;
+          &-text {
+            top: 73%;
+            left: 15px;
+          }
+        }
+        @media (min-width: 900px) {
+          &-text {
+            font-size: 16px;
+          }
         }
       }
       @media (min-width: 900px) {
-        &-text {
-          font-size: 16px;
-        }
+        margin-top: 80px;
       }
-    }
-    @media (min-width: 900px) {
-      margin-top: 80px;
     }
   }
   .es-qa {
