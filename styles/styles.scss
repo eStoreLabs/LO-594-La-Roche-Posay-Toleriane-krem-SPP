@@ -476,8 +476,8 @@ $media-breakpoint-duo-md: 768px;
           transform: translateY(-8px);
         }
         .es-cross__single--link {
-          color: #000;
-          background-color: #fff;
+          color: $color-black;
+          background-color: $color-white;
         }
       }
       &:nth-child(2),
@@ -497,40 +497,44 @@ $media-breakpoint-duo-md: 768px;
         font-size: 14px;
       }
       &--link {
-        background-color: #000;
-        color: #fff;
+        background-color: $color-black;
+        color: $color-white;
         font-size: 14px;
         text-transform: uppercase;
         text-align: center;
-        border: #000 1px solid;
+        border: $color-black 1px solid;
         border-radius: 5px;
         padding: 10px 0;
         width: 95%;
         transition: all 0.3s ease-in-out;
       }
+      &--text--border {
+        width: 18px;
+        height: 51px;
+        background-color: $color-accent-2;
+      }
+    }
+    .es-blue-text {
+      color: $color-accent-2;
+      text-transform: uppercase;
+    }
+    @media (min-width: $media-breakpoint-md) {
+      display: block;
     }
   }
-  .es-blue-text {
-    color: #009fe3;
-    text-transform: uppercase;
-  }
+
   .es-cross-mobile {
     .es-title-small {
       margin-top: 40px;
       margin-bottom: 20px;
     }
-  }
-  .es-crosss__single--text--border {
-    width: 18px;
-    height: 51px;
-    background-color: #009fe3;
-  }
-  @media (min-width: $media-breakpoint-md) {
-    .es-cross-mobile {
-      display: none;
+    .es-crosss__single--text--border {
+      width: 18px;
+      height: 51px;
+      background-color: $color-accent-2;
     }
-    .es-cross {
-      display: block;
+    @media (min-width: $media-breakpoint-md) {
+      display: none;
     }
   }
 
