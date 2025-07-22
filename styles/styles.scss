@@ -98,10 +98,8 @@ $media-breakpoint-duo-md: 768px;
     &__3 {
       margin-top: 10px;
     }
-  }
 
-  @media (min-width: $media-breakpoint-md) {
-    .es-logos {
+    @media (min-width: $media-breakpoint-md) {
       justify-content: space-evenly;
 
       img {
