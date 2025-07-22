@@ -768,19 +768,22 @@ $media-breakpoint-duo-md: 768px;
       flex-wrap: wrap;
     }
     &--left {
-      background-color: #7399c6;
-      color: #fff;
+      background-color: $color-accent;
+      color: $color-white;
       text-align: center;
       width: 100%;
       max-width: 600px;
       margin: 0 auto;
       padding: 35px 30px 45px 30px;
-      &--text {
-        font-size: 18px;
-      }
-      &--sup {
-        font-size: 12px;
-      }
+    }
+    &--right {
+      margin: 0 auto;
+    }
+    &--left--text {
+      font-size: 18px;
+    }
+    &--left--sup {
+      font-size: 12px;
     }
     &__percent {
       font-size: $fs-duo-percent;
@@ -812,10 +815,10 @@ $media-breakpoint-duo-md: 768px;
         width: 50%;
         margin: unset;
         padding: unset;
-        &--text--wrapper {
-          margin-top: 10px;
-          margin-left: -34%;
-        }
+      }
+      &--left--text--wrapper {
+        margin-top: 10px;
+        margin-left: -34%;
       }
       &--right {
         width: 50%;

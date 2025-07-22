@@ -685,6 +685,9 @@
   margin: 0 auto;
   padding: 35px 30px 45px 30px;
 }
+#es-rc #es-rc-content .es-duo--right {
+  margin: 0 auto;
+}
 #es-rc #es-rc-content .es-duo--left--text {
   font-size: 18px;
 }
