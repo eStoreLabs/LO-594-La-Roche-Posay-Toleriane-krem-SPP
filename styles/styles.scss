@@ -1,6 +1,5 @@
 // Variables
 $text-main: "Montserrat", sans-serif;
-$text-secondary: "Montserrat", sans-serif;
 
 $fw-regular: 400;
 $fw-bold: 700;
@@ -75,6 +74,21 @@ $media-breakpoint-duo-md: 768px;
 
   .es-uppercase {
     text-transform: uppercase;
+  }
+
+  .es-title-small {
+    font-size: $fs-header;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .es-white-text {
+    color: #fff;
+  }
+
+  .es-small-text {
+    font-size: 25px;
   }
 
   .es-logos {
@@ -259,12 +273,6 @@ $media-breakpoint-duo-md: 768px;
     }
   }
 
-  .es-title-small {
-    font-size: $fs-header;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-  }
   .es-ingredience {
     .es-title-small {
       margin-top: 30px;
@@ -641,12 +649,7 @@ $media-breakpoint-duo-md: 768px;
       }
     }
   }
-  .es-white-text {
-    color: #fff;
-  }
-  .es-small-text {
-    font-size: 25px;
-  }
+
   .es-table {
     display: none;
     &__title {
@@ -676,6 +679,7 @@ $media-breakpoint-duo-md: 768px;
       }
     }
   }
+
   .es-table-mobile {
     .es-table__single {
       width: 100%;
@@ -685,6 +689,7 @@ $media-breakpoint-duo-md: 768px;
       }
     }
   }
+
   .es-products-mobile {
     margin-bottom: 30px;
     .es-products__single {
@@ -697,6 +702,7 @@ $media-breakpoint-duo-md: 768px;
       display: none;
     }
   }
+
   .es-swiper2 {
     width: 317px;
     padding-bottom: 15px;
@@ -742,6 +748,7 @@ $media-breakpoint-duo-md: 768px;
       color: #7399c6;
     }
   }
+
   @media (min-width: 576px) {
     .es-table {
       display: block;
@@ -750,6 +757,7 @@ $media-breakpoint-duo-md: 768px;
       display: none;
     }
   }
+
   .es-duo {
     .es-title-small {
       margin: 50px 0;
@@ -830,65 +838,66 @@ $media-breakpoint-duo-md: 768px;
       }
     }
   }
+
   .es-top {
     &__container {
       display: flex;
       margin-top: 45px;
       justify-content: space-between;
       flex-wrap: wrap;
-
-      &__single {
-        width: 100%;
-        margin: 10px 0;
-        &:nth-child(1) {
-          align-self: center;
+    }
+    &__single {
+      width: 100%;
+      margin: 10px 0;
+      &:nth-child(1) {
+        align-self: center;
+      }
+      &-img {
+        position: relative;
+      }
+      &-text {
+        position: absolute;
+        bottom: 5%;
+        left: 15px;
+        text-transform: uppercase;
+        color: $color-white;
+        .es-bold {
+          font-weight: $fw-bold;
         }
-        &-img {
-          position: relative;
-        }
+      }
+      @media (max-width: 350px) {
         &-text {
-          position: absolute;
-          bottom: 5%;
-          left: 15px;
-          text-transform: uppercase;
-          color: $color-white;
-          .es-bold {
-            font-weight: $fw-bold;
-          }
-        }
-        @media (max-width: 350px) {
-          &-text {
-            font-size: 14px;
-          }
-        }
-        @media (min-width: 576px) {
-          width: 24.5%;
-          margin: unset;
           font-size: 14px;
-          &-text {
-            top: 60%;
-            left: 0;
-          }
         }
-        @media (min-width: 700px) {
-          font-size: 14px;
+      }
+      @media (min-width: 576px) {
+        width: 24.5%;
+        margin: unset;
+        font-size: 14px;
+        &-text {
+          top: 60%;
+          left: 0;
+        }
+      }
+      @media (min-width: 700px) {
+        font-size: 14px;
+        left: 15px;
+        &-text {
+          top: 73%;
           left: 15px;
-          &-text {
-            top: 73%;
-            left: 15px;
-          }
-        }
-        @media (min-width: 900px) {
-          &-text {
-            font-size: 16px;
-          }
         }
       }
       @media (min-width: 900px) {
-        margin-top: 80px;
+        &-text {
+          font-size: 16px;
+        }
       }
     }
+    @media (min-width: 900px) {
+      margin-top: 80px;
+    }
   }
+
   .es-qa {
     margin-top: 50px;
     .es-accordion {
@@ -946,6 +955,7 @@ $media-breakpoint-duo-md: 768px;
       }
     }
   }
+
   .es-footer {
     font-size: 13px;
     margin-top: 50px;

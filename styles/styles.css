@@ -29,6 +29,18 @@
 #es-rc #es-rc-content .es-uppercase {
   text-transform: uppercase;
 }
+#es-rc #es-rc-content .es-title-small {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+#es-rc #es-rc-content .es-white-text {
+  color: #fff;
+}
+#es-rc #es-rc-content .es-small-text {
+  font-size: 25px;
+}
 #es-rc #es-rc-content .es-logos {
   display: flex;
   justify-content: space-between;
@@ -193,12 +205,6 @@
   #es-rc #es-rc-content .es-benefits__single:nth-child(3) {
     max-width: 30%;
   }
-}
-#es-rc #es-rc-content .es-title-small {
-  font-size: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1;
 }
 #es-rc #es-rc-content .es-ingredience .es-title-small {
   margin-top: 30px;
@@ -558,12 +564,6 @@
     justify-content: space-between;
   }
 }
-#es-rc #es-rc-content .es-white-text {
-  color: #fff;
-}
-#es-rc #es-rc-content .es-small-text {
-  font-size: 25px;
-}
 #es-rc #es-rc-content .es-table {
   display: none;
 }
@@ -750,59 +750,59 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#es-rc #es-rc-content .es-top__container__single {
+#es-rc #es-rc-content .es-top__single {
   width: 100%;
   margin: 10px 0;
 }
-#es-rc #es-rc-content .es-top__container__single:nth-child(1) {
+#es-rc #es-rc-content .es-top__single:nth-child(1) {
   align-self: center;
 }
-#es-rc #es-rc-content .es-top__container__single-img {
+#es-rc #es-rc-content .es-top__single-img {
   position: relative;
 }
-#es-rc #es-rc-content .es-top__container__single-text {
+#es-rc #es-rc-content .es-top__single-text {
   position: absolute;
   bottom: 5%;
   left: 15px;
   text-transform: uppercase;
   color: #fff;
 }
-#es-rc #es-rc-content .es-top__container__single-text .es-bold {
+#es-rc #es-rc-content .es-top__single-text .es-bold {
   font-weight: 700;
 }
 @media (max-width: 350px) {
-  #es-rc #es-rc-content .es-top__container__single-text {
+  #es-rc #es-rc-content .es-top__single-text {
     font-size: 14px;
   }
 }
 @media (min-width: 576px) {
-  #es-rc #es-rc-content .es-top__container__single {
+  #es-rc #es-rc-content .es-top__single {
     width: 24.5%;
     margin: unset;
     font-size: 14px;
   }
-  #es-rc #es-rc-content .es-top__container__single-text {
+  #es-rc #es-rc-content .es-top__single-text {
     top: 60%;
     left: 0;
   }
 }
 @media (min-width: 700px) {
-  #es-rc #es-rc-content .es-top__container__single {
+  #es-rc #es-rc-content .es-top__single {
     font-size: 14px;
     left: 15px;
   }
-  #es-rc #es-rc-content .es-top__container__single-text {
+  #es-rc #es-rc-content .es-top__single-text {
     top: 73%;
     left: 15px;
   }
 }
 @media (min-width: 900px) {
-  #es-rc #es-rc-content .es-top__container__single-text {
+  #es-rc #es-rc-content .es-top__single-text {
     font-size: 16px;
   }
 }
 @media (min-width: 900px) {
-  #es-rc #es-rc-content .es-top__container {
+  #es-rc #es-rc-content .es-top {
     margin-top: 80px;
   }
 }
