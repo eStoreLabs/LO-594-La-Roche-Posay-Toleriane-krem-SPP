@@ -45,8 +45,15 @@
       el: root.querySelector(".es-swiper2-pagination"),
     },
     navigation: {
-      nextEl: root.querySelector(".es-swiper2-button-next"),
-      prevEl: root.querySelector(".es-swiper2-button-prev"),
+      nextEl: ".es-swiper2-button-next",
+      prevEl: ".es-swiper2-button-prev",
     },
+  });
+
+  const allNextBtns = root.querySelectorAll(".es-swiper2-button-next");
+  allNextBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      swiper2.slideNext();
+    });
   });
 })();
