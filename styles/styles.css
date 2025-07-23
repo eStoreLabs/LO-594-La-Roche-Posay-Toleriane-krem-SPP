@@ -781,66 +781,51 @@
     max-height: 300px;
   }
 }
+#es-rc #es-rc-content .es-top {
+  margin-top: 45px;
+}
 #es-rc #es-rc-content .es-top__container {
   display: flex;
-  margin-top: 45px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
-}
-#es-rc #es-rc-content .es-top__single {
-  width: 100%;
-  margin: 10px 0;
-}
-#es-rc #es-rc-content .es-top__single:nth-child(1) {
-  align-self: center;
+  gap: 15px;
+  margin-top: 45px;
 }
 #es-rc #es-rc-content .es-top__single-img {
   position: relative;
 }
 #es-rc #es-rc-content .es-top__single-text {
+  font-size: 23px;
   position: absolute;
   bottom: 5%;
-  left: 15px;
+  left: 5%;
   text-transform: uppercase;
   color: #fff;
 }
 #es-rc #es-rc-content .es-top__single-text .es-bold {
   font-weight: 700;
 }
-@media (max-width: 350px) {
-  #es-rc #es-rc-content .es-top__single-text {
-    font-size: 14px;
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-top {
+    display: flex;
+    align-items: center;
   }
-}
-@media (min-width: 576px) {
-  #es-rc #es-rc-content .es-top__single {
-    width: 24.5%;
-    margin: unset;
-    font-size: 14px;
-  }
-  #es-rc #es-rc-content .es-top__single-text {
-    top: 60%;
-    left: 0;
-  }
-}
-@media (min-width: 700px) {
-  #es-rc #es-rc-content .es-top__single {
-    font-size: 14px;
-    left: 15px;
+  #es-rc #es-rc-content .es-top__container {
+    margin-top: unset;
+    margin-left: 15px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
   #es-rc #es-rc-content .es-top__single-text {
-    top: 73%;
-    left: 15px;
+    font-size: 14px;
   }
 }
 @media (min-width: 900px) {
   #es-rc #es-rc-content .es-top__single-text {
     font-size: 16px;
-  }
-}
-@media (min-width: 900px) {
-  #es-rc #es-rc-content .es-top {
-    margin-top: 80px;
   }
 }
 #es-rc #es-rc-content .es-qa {
@@ -888,6 +873,16 @@
 }
 #es-rc #es-rc-content .es-qa .es-accordion .active .es-accordion__arrow {
   transform: rotate(180deg);
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-qa .es-accordion .es-accordion__arrow {
+    top: 50%;
+    bottom: unset;
+    transform: translateY(-50%);
+  }
+  #es-rc #es-rc-content .es-qa .es-accordion .active .es-accordion__arrow {
+    transform: translateY(-50%) rotate(180deg);
+  }
 }
 #es-rc #es-rc-content .es-qa .es-qa__small-text {
   font-size: 12px;

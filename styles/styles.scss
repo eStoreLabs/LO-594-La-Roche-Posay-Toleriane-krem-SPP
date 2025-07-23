@@ -869,61 +869,55 @@ $media-breakpoint-research: 775px;
   }
 
   .es-top {
+    margin-top: 45px;
+
     &__container {
       display: flex;
-      margin-top: 45px;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 45px;
     }
     &__single {
-      width: 100%;
-      margin: 10px 0;
-      &:nth-child(1) {
-        align-self: center;
-      }
       &-img {
         position: relative;
       }
       &-text {
+        font-size: 23px;
         position: absolute;
         bottom: 5%;
-        left: 15px;
+        left: 5%;
         text-transform: uppercase;
         color: $color-white;
         .es-bold {
           font-weight: $fw-bold;
         }
       }
-      @media (max-width: 350px) {
+    }
+    @media (min-width: $media-breakpoint-md) {
+      display: flex;
+      align-items: center;
+      &__container {
+        margin-top: unset;
+        margin-left: 15px;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      &__single {
         &-text {
           font-size: 14px;
         }
       }
-      @media (min-width: 576px) {
-        width: 24.5%;
-        margin: unset;
-        font-size: 14px;
-        &-text {
-          top: 60%;
-          left: 0;
-        }
-      }
-      @media (min-width: 700px) {
-        font-size: 14px;
-        left: 15px;
-        &-text {
-          top: 73%;
-          left: 15px;
-        }
-      }
-      @media (min-width: $media-breakpoint-lg) {
-        &-text {
-          font-size: 16px;
-        }
-      }
     }
     @media (min-width: $media-breakpoint-lg) {
-      margin-top: 80px;
+      &__single {
+        &-text {
+          font-size: $fs-base;
+        }
+      }
     }
   }
 
@@ -970,6 +964,16 @@ $media-breakpoint-research: 775px;
       }
       .active .es-accordion__arrow {
         transform: rotate(180deg);
+      }
+      @media (min-width: $media-breakpoint-md) {
+        .es-accordion__arrow {
+          top: 50%;
+          bottom: unset;
+          transform: translateY(-50%);
+        }
+        .active .es-accordion__arrow {
+          transform: translateY(-50%) rotate(180deg);
+        }
       }
     }
     .es-qa__small-text {
