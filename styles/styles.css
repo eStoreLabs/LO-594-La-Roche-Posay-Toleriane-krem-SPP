@@ -202,22 +202,22 @@
     text-wrap: balance;
   }
 }
-#es-rc #es-rc-content .es-ingredience .es-title-small {
+#es-rc #es-rc-content .es-ingredients .es-title-small {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-#es-rc #es-rc-content .es-ingredience__container {
+#es-rc #es-rc-content .es-ingredients__container {
   background-size: 250px;
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-bottom: 260px;
 }
-#es-rc #es-rc-content .es-ingredience__list {
+#es-rc #es-rc-content .es-ingredients__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#es-rc #es-rc-content .es-ingredience__single {
+#es-rc #es-rc-content .es-ingredients__single {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -228,28 +228,28 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-#es-rc #es-rc-content .es-ingredience__single--text {
+#es-rc #es-rc-content .es-ingredients__single--text {
   text-transform: uppercase;
   margin-left: 10px;
   margin-top: 5px;
 }
-#es-rc #es-rc-content .es-ingredience__single--text--title {
+#es-rc #es-rc-content .es-ingredients__single--text--title {
   font-weight: 900;
   font-size: 20px;
   margin-bottom: 10px;
 }
-#es-rc #es-rc-content .es-ingredience__single--text--desc {
+#es-rc #es-rc-content .es-ingredients__single--text--desc {
   font-size: 14px;
 }
-#es-rc #es-rc-content .es-ingredience__single--img img {
+#es-rc #es-rc-content .es-ingredients__single--img img {
   max-width: 80px;
   transition: all 0.3s ease-in-out;
 }
-#es-rc #es-rc-content .es-ingredience__single--img img:hover {
+#es-rc #es-rc-content .es-ingredients__single--img img:hover {
   transform: scale(1.1);
 }
 @media (min-width: 576px) {
-  #es-rc #es-rc-content .es-ingredience__container {
+  #es-rc #es-rc-content .es-ingredients__container {
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -257,19 +257,19 @@
   }
 }
 @media (min-width: 900px) {
-  #es-rc #es-rc-content .es-ingredience .es-title-small {
+  #es-rc #es-rc-content .es-ingredients .es-title-small {
     margin-top: 80px;
     margin-bottom: 60px;
   }
-  #es-rc #es-rc-content .es-ingredience__list {
+  #es-rc #es-rc-content .es-ingredients__list {
     justify-content: flex-end;
   }
-  #es-rc #es-rc-content .es-ingredience__container {
+  #es-rc #es-rc-content .es-ingredients__container {
     background-size: auto 100%;
     background-position-x: 11%;
     padding-bottom: 80px;
   }
-  #es-rc #es-rc-content .es-ingredience__single {
+  #es-rc #es-rc-content .es-ingredients__single {
     width: 34%;
     padding-top: 30px;
     flex-direction: row;
@@ -277,7 +277,7 @@
     align-items: unset;
     text-align: left;
   }
-  #es-rc #es-rc-content .es-ingredience__single--text--title {
+  #es-rc #es-rc-content .es-ingredients__single--text--title {
     margin-bottom: 5px;
   }
 }
