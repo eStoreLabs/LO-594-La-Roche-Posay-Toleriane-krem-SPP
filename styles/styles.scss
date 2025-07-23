@@ -9,7 +9,7 @@ $fs-base: 16px;
 $fs-header: 30px;
 $fs-header-lg: 40px;
 $fs-title: 25px;
-$fs-benefit: 15px;
+
 $fs-small: 12px;
 $fs-percent: 40px;
 $fs-percent-lg: 50px;
@@ -30,13 +30,11 @@ $color-black: #000;
 $color-table-bg: #f2f2f2;
 
 $media-breakpoint-sm: 576px;
-$media-breakpoint-md: 608px;
-$media-breakpoint-tablet: 670px;
+$media-breakpoint-md: 768px;
 $media-breakpoint-lg: 900px;
 $media-breakpoint-xl: 965px;
 $media-breakpoint-duo: 910px;
 $media-breakpoint-research: 775px;
-$media-breakpoint-duo-md: 768px;
 
 #es-rc #es-rc-content {
   font-family: $text-main;
@@ -223,27 +221,27 @@ $media-breakpoint-duo-md: 768px;
     }
     &__list {
       display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: center;
       flex-wrap: wrap;
-      max-width: 290px;
-      margin: 30px auto 0 auto;
+      gap: 25px;
+      padding-inline: 16px;
+      margin-block: 50px;
     }
     &__single {
       display: flex;
-      margin: 15px 10px;
-      align-items: center;
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(3) {
-        max-width: 295px;
-      }
-      &--icon {
-        max-width: 35px;
+
+      &--icon img {
+        max-width: 51px;
+        width: 51px;
+        height: 45px;
       }
       &--text {
         text-transform: uppercase;
         text-align: left;
         margin-left: 10px;
-        font-size: $fs-benefit;
+        font-size: 15px;
       }
     }
     @media (min-width: $media-breakpoint-md) {
@@ -252,23 +250,17 @@ $media-breakpoint-duo-md: 768px;
         margin-top: 50px;
       }
       &__list {
-        max-width: unset;
-        margin: 50px auto 0 auto;
-      }
-    }
-    @media (min-width: $media-breakpoint-lg) {
-      &__list {
+        flex-direction: row;
         justify-content: space-between;
+        padding-inline: 32px;
       }
       &__single {
-        margin: 0;
-        &:nth-child(1),
-        &:nth-child(2) {
-          max-width: 22%;
-        }
-        &:nth-child(3) {
-          max-width: 30%;
-        }
+        max-width: 33%;
+        flex: 1 1 0;
+      }
+      &__text {
+        font-size: 14px;
+        text-wrap: balance;
       }
     }
   }
@@ -305,7 +297,7 @@ $media-breakpoint-duo-md: 768px;
         margin-top: 5px;
         &--title {
           font-weight: $fw-black;
-          font-size: $fs-benefit;
+          font-size: 20px;
           margin-bottom: 10px;
         }
         &--desc {
@@ -473,6 +465,10 @@ $media-breakpoint-duo-md: 768px;
       margin: 15px auto;
       width: 190px;
       transition: transform 0.6s;
+      @media (min-width: $media-breakpoint-lg) {
+        max-width: 20%;
+        margin: 0;
+      }
       &--img {
         img {
           max-height: 250px;
@@ -503,6 +499,9 @@ $media-breakpoint-duo-md: 768px;
       &--text {
         padding-left: 5px;
         font-size: 14px;
+        @media (min-width: $media-breakpoint-lg) {
+          font-size: 12px;
+        }
       }
       &--link {
         background-color: $color-black;
@@ -526,7 +525,7 @@ $media-breakpoint-duo-md: 768px;
       color: $color-accent-2;
       text-transform: uppercase;
     }
-    @media (min-width: $media-breakpoint-md) {
+    @media (min-width: $media-breakpoint-lg) {
       display: block;
     }
   }
@@ -541,7 +540,7 @@ $media-breakpoint-duo-md: 768px;
       height: 51px;
       background-color: $color-accent-2;
     }
-    @media (min-width: $media-breakpoint-md) {
+    @media (min-width: $media-breakpoint-lg) {
       display: none;
     }
   }
@@ -635,7 +634,7 @@ $media-breakpoint-duo-md: 768px;
         }
       }
     }
-    @media (min-width: 670px) {
+    @media (min-width: $media-breakpoint-md) {
       .es-products-mobile {
         display: none;
       }
@@ -698,7 +697,7 @@ $media-breakpoint-duo-md: 768px;
         margin-bottom: 10px;
       }
     }
-    @media (min-width: 670px) {
+    @media (min-width: $media-breakpoint-md) {
       display: none;
     }
   }
@@ -810,7 +809,7 @@ $media-breakpoint-duo-md: 768px;
         transition: all 0.3s ease-in-out;
       }
     }
-    @media (min-width: $media-breakpoint-duo-md) {
+    @media (min-width: $media-breakpoint-md) {
       &--left {
         width: 50%;
         margin: unset;
@@ -890,13 +889,13 @@ $media-breakpoint-duo-md: 768px;
           left: 15px;
         }
       }
-      @media (min-width: 900px) {
+      @media (min-width: $media-breakpoint-lg) {
         &-text {
           font-size: 16px;
         }
       }
     }
-    @media (min-width: 900px) {
+    @media (min-width: $media-breakpoint-lg) {
       margin-top: 80px;
     }
   }
