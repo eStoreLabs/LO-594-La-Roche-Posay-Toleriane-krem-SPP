@@ -40,7 +40,7 @@
   font-size: 38px;
 }
 #es-rc #es-rc-content .es-blue-text {
-  color: #058ac5;
+  color: #49a1b7;
   text-transform: uppercase;
 }
 #es-rc #es-rc-content .es-small-text {
@@ -104,9 +104,6 @@
   margin-top: 8px;
   margin-bottom: 15px;
 }
-#es-rc #es-rc-content .es-kv__left--desc {
-  font-size: 24px;
-}
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-kv {
     background-position: 73%;
@@ -123,9 +120,6 @@
   }
   #es-rc #es-rc-content .es-kv__left--name {
     font-size: 48px;
-  }
-  #es-rc #es-rc-content .es-kv__left--desc {
-    font-size: 26px;
   }
 }
 @media (min-width: 900px) {
@@ -196,8 +190,8 @@
 #es-rc #es-rc-content .es-ingredients__container {
   background-size: 250px;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  padding-bottom: 260px;
+  background-position: bottom left;
+  padding-bottom: 390px;
 }
 #es-rc #es-rc-content .es-ingredients__list {
   display: flex;
@@ -234,12 +228,6 @@
 }
 #es-rc #es-rc-content .es-ingredients__single--img img:hover {
   transform: scale(1.1);
-}
-@media (min-width: 576px) {
-  #es-rc #es-rc-content .es-ingredients__container {
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
 }
 @media (min-width: 900px) {
   #es-rc #es-rc-content .es-ingredients .es-title-small {
@@ -382,7 +370,7 @@
 #es-rc #es-rc-content .es-cross__single--text--border {
   width: 18px;
   height: 51px;
-  background-color: #058ac5;
+  background-color: #49a1b7;
 }
 @media (min-width: 900px) {
   #es-rc #es-rc-content .es-cross {
@@ -396,7 +384,7 @@
 #es-rc #es-rc-content .es-cross-mobile .es-crosss__single--text--border {
   width: 18px;
   height: 51px;
-  background-color: #058ac5;
+  background-color: #49a1b7;
 }
 @media (min-width: 900px) {
   #es-rc #es-rc-content .es-cross-mobile {
@@ -417,7 +405,7 @@
   opacity: 0.1;
 }
 #es-rc #es-rc-content .es-swiper1 .swiper-pagination-bullet-active {
-  background: #058ac5;
+  background: #49a1b7;
   opacity: 1;
 }
 #es-rc #es-rc-content .es-swiper1 .swiper-button-prev.es-swiper1-button-prev,
@@ -435,7 +423,7 @@
 #es-rc #es-rc-content .es-swiper1 .swiper-button-next.es-swiper1-button-next::after {
   font-size: 22px;
   font-weight: 900;
-  color: #058ac5;
+  color: #49a1b7;
 }
 #es-rc #es-rc-content .es-video {
   margin: 50px 0;
@@ -457,7 +445,7 @@
 }
 #es-rc #es-rc-content .es-products__single {
   display: flex;
-  background-color: #058ac5;
+  background-color: #49a1b7;
   justify-content: space-between;
   align-items: flex-end;
   padding: 25px 20px;
@@ -537,7 +525,7 @@
 #es-rc #es-rc-content .es-table__title {
   font-weight: 900;
   font-size: 25px;
-  color: #058ac5;
+  color: #49a1b7;
   text-align: center;
   text-transform: uppercase;
   margin: 25px 0;
@@ -607,7 +595,7 @@
   opacity: 0.1;
 }
 #es-rc #es-rc-content .es-swiper2 .swiper-pagination-bullet-active {
-  background: #058ac5;
+  background: #49a1b7;
   opacity: 1;
 }
 #es-rc #es-rc-content .es-swiper2 .swiper-button-prev.es-swiper2-button-prev,
@@ -625,7 +613,7 @@
 #es-rc #es-rc-content .es-swiper2 .swiper-button-next.es-swiper2-button-next::after {
   font-size: 22px;
   font-weight: 900;
-  color: #058ac5;
+  color: #49a1b7;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-table {
@@ -713,7 +701,7 @@
   color: #fff;
   transition: all 200ms ease-out;
   cursor: pointer;
-  background: #058ac5;
+  background: #49a1b7;
   z-index: 1;
   position: relative;
 }

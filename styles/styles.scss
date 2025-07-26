@@ -23,8 +23,8 @@ $px-XXL: 50px;
 
 $color-main: #0d1116;
 $color-bg: #f4f4f4;
-$color-accent: #058ac5;
-$color-accent-2: #058ac5;
+$color-accent: #49a1b7;
+$color-accent-2: #49a1b7;
 $color-white: #fff;
 $color-black: #000;
 $color-table-bg: #f2f2f2;
@@ -161,9 +161,6 @@ $media-breakpoint-research: 775px;
         margin-top: $px-S;
         margin-bottom: $px-M;
       }
-      &--desc {
-        font-size: 24px;
-      }
     }
     @media (min-width: $media-breakpoint-md) {
       background-position: 73%;
@@ -178,9 +175,6 @@ $media-breakpoint-research: 775px;
         }
         &--name {
           font-size: 48px;
-        }
-        &--desc {
-          font-size: 26px;
         }
       }
     }
@@ -257,8 +251,8 @@ $media-breakpoint-research: 775px;
     &__container {
       background-size: 250px;
       background-repeat: no-repeat;
-      background-position: center bottom;
-      padding-bottom: 260px;
+      background-position: bottom left;
+      padding-bottom: 390px;
     }
     &__list {
       display: flex;
@@ -296,12 +290,6 @@ $media-breakpoint-research: 775px;
             transform: scale(1.1);
           }
         }
-      }
-    }
-    @media (min-width: 576px) {
-      &__container {
-        background-repeat: no-repeat;
-        background-position: bottom;
       }
     }
     @media (min-width: $media-breakpoint-lg) {
