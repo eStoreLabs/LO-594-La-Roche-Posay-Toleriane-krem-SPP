@@ -12,9 +12,8 @@ $fs-header-lg: 40px;
 $fs-title: 25px;
 
 $fs-small: 12px;
-$fs-percent: 40px;
-$fs-percent-lg: 50px;
-$fs-duo-percent: 55px;
+$fs-percent: 50px;
+$fs-percent-lg: 60px;
 
 $px-S: 8px;
 $px-M: 15px;
@@ -311,6 +310,7 @@ $media-breakpoint-research: 775px;
       }
       &__list {
         justify-content: flex-end;
+        padding-bottom: 36px;
       }
       &__container {
         background-size: auto 100%;
@@ -327,6 +327,54 @@ $media-breakpoint-research: 775px;
         &--text--title {
           margin-bottom: 5px;
         }
+      }
+    }
+  }
+
+  .es-features {
+    &__left {
+      color: $color-white;
+      text-align: center;
+      padding: $px-XL;
+      text-wrap: balance;
+      word-break: auto;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      gap: $px-M;
+
+      &--text {
+        font-weight: $fw-bold;
+        font-size: 20px;
+      }
+      &--number {
+        font-size: $fs-percent;
+      }
+      &--percent {
+        margin-left: -0.25em;
+        vertical-align: 120%;
+      }
+    }
+    @media (min-width: $media-breakpoint-md) {
+      background-position: 73%;
+      min-height: 380px;
+      display: flex;
+      align-items: center;
+      &__left {
+        max-width: 50%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &--number {
+          font-size: $fs-percent-lg;
+        }
+      }
+    }
+    @media (min-width: $media-breakpoint-lg) {
+      &__left {
+        max-width: 54%;
+        gap: 24px;
       }
     }
   }
