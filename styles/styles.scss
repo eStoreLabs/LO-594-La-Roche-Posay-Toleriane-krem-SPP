@@ -24,9 +24,8 @@ $px-XXL: 50px;
 
 $color-main: #0d1116;
 $color-bg: #f4f4f4;
-$color-accent: #7399c6;
-$color-accent-2: #009fe3;
-$color-accent-3: #7399c6;
+$color-accent: #058ac5;
+$color-accent-2: #058ac5;
 $color-white: #fff;
 $color-black: #000;
 $color-table-bg: #f2f2f2;
@@ -301,10 +300,8 @@ $media-breakpoint-research: 775px;
     }
     @media (min-width: 576px) {
       &__container {
-        background-size: 200px;
         background-repeat: no-repeat;
         background-position: bottom;
-        padding-bottom: 80px;
       }
     }
     @media (min-width: $media-breakpoint-lg) {
@@ -317,11 +314,11 @@ $media-breakpoint-research: 775px;
       }
       &__container {
         background-size: auto 100%;
-        background-position-x: 11%;
-        padding-bottom: 80px;
+        background-position-x: 0%;
+        padding-bottom: 0px;
       }
       &__single {
-        width: 34%;
+        width: 37%;
         padding-top: 30px;
         flex-direction: row;
         justify-content: unset;
@@ -442,7 +439,7 @@ $media-breakpoint-research: 775px;
       opacity: 0.1;
     }
     .swiper-pagination-bullet-active {
-      background: $color-accent-3;
+      background: $color-accent;
       opacity: 1;
     }
     .swiper-button-prev.es-swiper1-button-prev,
@@ -460,7 +457,7 @@ $media-breakpoint-research: 775px;
     .swiper-button-next.es-swiper1-button-next::after {
       font-size: 22px;
       font-weight: 900;
-      color: $color-accent-3;
+      color: $color-accent;
     }
   }
 
@@ -484,7 +481,7 @@ $media-breakpoint-research: 775px;
     }
     &__single {
       display: flex;
-      background-color: $color-accent-3;
+      background-color: $color-accent;
       justify-content: space-between;
       align-items: flex-end;
       padding: 25px 20px;
@@ -564,7 +561,7 @@ $media-breakpoint-research: 775px;
     &__title {
       font-weight: 900;
       font-size: 25px;
-      color: #7399c6;
+      color: $color-accent;
       text-align: center;
       text-transform: uppercase;
       margin: 25px 0;
@@ -636,7 +633,7 @@ $media-breakpoint-research: 775px;
       opacity: 0.1;
     }
     .swiper-pagination-bullet-active {
-      background: #7399c6;
+      background: $color-accent;
       opacity: 1;
     }
     .swiper-button-prev.es-swiper2-button-prev,
@@ -654,7 +651,7 @@ $media-breakpoint-research: 775px;
     .swiper-button-next.es-swiper2-button-next::after {
       font-size: 22px;
       font-weight: 900;
-      color: #7399c6;
+      color: $color-accent;
     }
   }
 
@@ -749,7 +746,7 @@ $media-breakpoint-research: 775px;
         color: #fff;
         transition: all 200ms ease-out;
         cursor: pointer;
-        background: #7399c6;
+        background: $color-accent;
         z-index: 1;
         position: relative;
       }
