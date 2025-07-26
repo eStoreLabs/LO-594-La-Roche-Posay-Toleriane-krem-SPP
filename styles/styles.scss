@@ -3,6 +3,7 @@ $text-main: "Montserrat", sans-serif;
 
 $fw-regular: 400;
 $fw-bold: 700;
+$fw-extrabold: 800;
 $fw-black: 900;
 
 $fs-base: 16px;
@@ -139,6 +140,54 @@ $media-breakpoint-research: 775px;
           max-height: 60px;
           padding: 0;
         }
+      }
+    }
+  }
+
+  .es-kv {
+    &__left {
+      color: $color-white;
+      text-align: center;
+      padding: $px-XL;
+      text-wrap: balance;
+      word-break: auto;
+      &--headline {
+        text-transform: uppercase;
+        font-size: 24px;
+      }
+      &--name {
+        font-size: $fs-header-lg;
+        font-weight: $fw-extrabold;
+        text-transform: uppercase;
+        margin-top: $px-S;
+        margin-bottom: $px-M;
+      }
+      &--desc {
+        font-size: 24px;
+      }
+    }
+    @media (min-width: $media-breakpoint-md) {
+      background-position: 73%;
+      min-height: 380px;
+      display: flex;
+      align-items: center;
+      &__left {
+        max-width: 65%;
+        text-align: left;
+        &--headline {
+          font-size: 26px;
+        }
+        &--name {
+          font-size: 48px;
+        }
+        &--desc {
+          font-size: 26px;
+        }
+      }
+    }
+    @media (min-width: $media-breakpoint-lg) {
+      &__left {
+        padding-inline: calc(1.4 * $px-XXL);
       }
     }
   }
