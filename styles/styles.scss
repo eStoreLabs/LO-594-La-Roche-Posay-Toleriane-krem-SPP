@@ -92,7 +92,7 @@ $media-breakpoint-research: 775px;
   }
 
   .es-small-text {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .es-sup {
@@ -551,7 +551,7 @@ $media-breakpoint-research: 775px;
       justify-content: space-between;
       align-items: flex-end;
       padding: 25px 20px;
-      font-size: 32px;
+      font-size: 36px;
       line-height: 1;
       width: 317px;
       height: 400px;
@@ -560,6 +560,9 @@ $media-breakpoint-research: 775px;
 
       &--img {
         margin-left: 40px;
+        &--3 {
+          margin-left: 15px;
+        }
         img {
           max-height: 320px;
           transition: all 0.3s ease-in-out;
@@ -572,8 +575,8 @@ $media-breakpoint-research: 775px;
         position: absolute;
         transform: rotate(-90deg) translateX(140px);
         text-transform: uppercase;
-        width: 350px;
-        right: -35%;
+        width: 380px;
+        right: -39%;
       }
       @media (min-width: $media-breakpoint-md) {
         width: 100%;
@@ -591,11 +594,28 @@ $media-breakpoint-research: 775px;
         }
       }
       @media (min-width: $media-breakpoint-md) and (max-width: $media-breakpoint-lg) {
+        font-size: 32px;
+        height: 370px;
+        .es-white-text {
+          font-size: 34px;
+        }
+        &--img {
+          margin-left: 4%;
+          img {
+            max-width: 70%;
+            margin: 0;
+          }
+        }
+      }
+      @media (min-width: $media-breakpoint-lg) {
         &--img {
           margin-left: 5%;
           img {
-            max-height: 250px;
+            max-height: 275px;
           }
+        }
+        &--text {
+          bottom: 82px;
         }
       }
     }
