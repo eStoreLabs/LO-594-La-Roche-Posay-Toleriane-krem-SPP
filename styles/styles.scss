@@ -99,6 +99,12 @@ $media-breakpoint-research: 775px;
     font-size: 0.6em;
   }
 
+  .es-mobile {
+    @media (min-width: $media-breakpoint-md) {
+      display: none;
+    }
+  }
+
   .es-logos {
     display: flex;
     flex-direction: column;
@@ -140,6 +146,13 @@ $media-breakpoint-research: 775px;
           padding: 0;
         }
       }
+    }
+  }
+
+  .es-kv--mobile {
+    padding: $px-XXL $px-XXL 0 0;
+    &__img {
+      margin: 0;
     }
   }
 
@@ -313,6 +326,9 @@ $media-breakpoint-research: 775px;
         justify-content: unset;
         align-items: unset;
         text-align: left;
+        &:nth-of-type(3) {
+          width: 58%;
+        }
         &--text--title {
           margin-bottom: 5px;
         }

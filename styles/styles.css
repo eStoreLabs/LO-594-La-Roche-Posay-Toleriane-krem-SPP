@@ -49,6 +49,11 @@
 #es-rc #es-rc-content .es-sup {
   font-size: 0.6em;
 }
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-mobile {
+    display: none;
+  }
+}
 #es-rc #es-rc-content .es-logos {
   display: flex;
   flex-direction: column;
@@ -85,6 +90,12 @@
     max-height: 60px;
     padding: 0;
   }
+}
+#es-rc #es-rc-content .es-kv--mobile {
+  padding: 50px 50px 0 0;
+}
+#es-rc #es-rc-content .es-kv--mobile__img {
+  margin: 0;
 }
 #es-rc #es-rc-content .es-kv__left {
   color: #fff;
@@ -250,6 +261,9 @@
     justify-content: unset;
     align-items: unset;
     text-align: left;
+  }
+  #es-rc #es-rc-content .es-ingredients__single:nth-of-type(3) {
+    width: 58%;
   }
   #es-rc #es-rc-content .es-ingredients__single--text--title {
     margin-bottom: 5px;
