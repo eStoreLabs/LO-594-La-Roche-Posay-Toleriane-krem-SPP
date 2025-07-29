@@ -245,6 +245,12 @@
 #es-rc #es-rc-content .es-ingredients__single--img img:hover {
   transform: scale(1.1);
 }
+@media (min-width: 576px) and (max-width: 900px) {
+  #es-rc #es-rc-content .es-ingredients__container {
+    background-size: 0%;
+    padding-bottom: 30px;
+  }
+}
 @media (min-width: 900px) {
   #es-rc #es-rc-content .es-ingredients .es-title-small {
     margin-top: 80px;
