@@ -23,8 +23,8 @@ $px-XXL: 50px;
 
 $color-main: #0d1116;
 $color-bg: #f4f4f4;
-$color-accent: #49a1b7;
-$color-accent-2: #49a1b7;
+$color-accent: #058ac5;
+$color-accent-2: #058ac5;
 $color-white: #fff;
 $color-black: #000;
 $color-table-bg: #f2f2f2;
@@ -181,7 +181,7 @@ $media-breakpoint-research: 775px;
       display: flex;
       align-items: center;
       &__left {
-        max-width: 65%;
+        max-width: 77%;
         text-align: left;
         &--headline {
           font-size: 26px;
@@ -193,7 +193,8 @@ $media-breakpoint-research: 775px;
     }
     @media (min-width: $media-breakpoint-lg) {
       &__left {
-        padding-inline: calc(1.4 * $px-XXL);
+        padding-left: calc(1.4 * $px-XXL);
+        padding-right: 0;
       }
     }
   }
