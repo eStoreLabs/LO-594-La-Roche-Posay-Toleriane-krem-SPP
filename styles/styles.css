@@ -91,12 +91,6 @@
     padding: 0;
   }
 }
-#es-rc #es-rc-content .es-kv--mobile {
-  padding: 50px 50px 0 0;
-}
-#es-rc #es-rc-content .es-kv--mobile__img {
-  margin: 0;
-}
 #es-rc #es-rc-content .es-kv__left {
   color: #fff;
   text-align: center;
@@ -160,7 +154,8 @@
   flex-wrap: wrap;
   gap: 25px;
   padding-inline: 16px;
-  margin-block: 50px;
+  max-width: 390px;
+  margin: 50px auto;
 }
 #es-rc #es-rc-content .es-benefits__single {
   display: flex;
@@ -185,6 +180,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-inline: 32px;
+    max-width: unset;
   }
   #es-rc #es-rc-content .es-benefits__single {
     max-width: 33%;
@@ -212,17 +208,15 @@
 }
 #es-rc #es-rc-content .es-ingredients__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-block: 30px;
-  gap: 24px;
 }
 #es-rc #es-rc-content .es-ingredients__single {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 48%;
   padding-top: 30px;
   text-align: center;
   padding-left: 10px;
@@ -256,6 +250,14 @@
   #es-rc #es-rc-content .es-ingredients__container {
     background-size: 0%;
     padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-ingredients__list {
+    flex-direction: row;
+  }
+  #es-rc #es-rc-content .es-ingredients__single {
+    width: 48%;
   }
 }
 @media (min-width: 900px) {
